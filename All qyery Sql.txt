@@ -1,0 +1,58 @@
+
+create table contact(id serial,name varchar(50),city varchar(50),mob varchar(20),age int,gender varchar(20))
+Select * from contact
+insert into contact(name,city,mob,age,gender)values('rohit','bihar','9576440079',21,'male')
+insert into contact(name,city,mob,age,gender)values('ramesh','pune','9576440079',25,'male');
+insert into contact(name,city,mob,age,gender)values('laxmi','nashik','7484011494',26,'famale');
+insert into contact(name,city,mob,age,gender)values('priya','pune','9576440079',22,'famale');
+Select name,gender from contact
+Select name,mob,age from contact
+Select name,mob,age from contact where id=1
+Select * from contact where city='nashik' 
+Select * from contact where gender='male'
+Select * from contact where age <=25
+Select * from contact where age >=25
+Select * from contact where gender='famale' and city='nashik'
+Select name,mob,city from contact
+Select * from contact where gender='famale' AND city='pune' AND age>=20
+Select * from contact where gender='famale' OR city='pune'
+Select * from contact where  name  in('rohit' , 'laxmi')
+Select * from contact where  name not in('rohit' )
+Select * from contact where city in('pune','nashik','bihar')
+Select * from contact where city in('nashik','bihar')
+Select * from contact where city not in('nashik','bihar')
+Select * from contact where city not in('pune')
+Select * from contact where name in('rohit','priya')
+Select * from contact where age in ('22')
+Select * from contact where age between 15 and 25
+Select * from contact order by name asc
+Select * from contact order by name desc
+Select * from contact order by age asc 
+Select * from contact order by age asc limit 2
+Select * from contact order by age desc
+Select * from contact order by age desc limit 1
+Select * from contact limit 1 offSet 2
+Select * from contact limit 2 offSet 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
